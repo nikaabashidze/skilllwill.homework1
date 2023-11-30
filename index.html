@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Document</title>
+</head>
+<body>
+    <aside class="condition"> 
+
+
+            <div id="condition1"> 
+                
+                <p>დაწერე ფუნქცია, რომელიც მიიღებს a და b პარამეტრებს და დააბრუნებს
+                     ტექსტს “ტოლია” თუ a უდრის b-ს, ხოლო წინააღმდეგ შემთხვევაში, 
+                     დააბრუნებს “არ არის ტოლი”. გაითვალისწინე, რომ a და b ყოველთვის 
+                     ერთი და იგივე ტიპის არ არის </p>
+                
+                
+                </div>
+            <div id="condition2">
+                    <p>
+                        დაწერე ფუნქცია, რომელიც პარამეტრად მიიღებს ტემპერატურას ფარენჰეიტებში 
+                        და დააბრუნებს ტემპერატურას ცელსიუსში . თუ პარამეტრი არ არის რიცხვითი
+                         მონაცემი დააბრუნე - false
+                    </p>
+
+            </div>
+            <div id="condition3">
+                <p>
+                    დაწერე ფუნქცია, რომელიც პარამეტრად მიიღებს a (პირველი რიცხვი), b (მეორე რიცხვი) 
+                    და operation (+, -, *, /) და დააბრუნებს ახალ მნიშვნელობას, რომელიც მიიღება ამ ორ
+                     რიცხვზე operation ცვლადში განსაზღვრული ოპერაციით. თუ a და b არ არიან რიცხვები,
+                      ან თუ operation ცვლადში არის უცნობი, ოპერაცია დააბრუნე - false
+                </p>
+            </div>
+    
+    </aside>
+
+            <div  class="cont"> 
+
+                <div class="buttons">
+                <button id="homework1">Function 1</button>
+                <button id="homework2">Function 2</button>
+                <button id="homework3">Function 3</button>
+                </div>
+
+                    <div class="restart">
+                        <a  href="index.html"> <h6>Clear Consol</h6> </a>                  
+                    </div>
+                
+
+                <div class="console"></div>
+
+            </div>
+            <aside class="functions">
+
+
+                    <div id="function1">
+                      <p> function compare(a, b) {</p>
+                        
+                     <br>  <p> if (a === b ) {</p>
+                        return 'equal'
+                       <p> }</p>
+                       <br>
+                        <p> if (typeof a === 'string' || typeof b === 'string') {</p>
+                        <p> return 'not equal because of the different types';</p>
+                         <p> }</p>
+                         <br>
+                         <p>else {</p>
+                          <p> return 'not equal';</p>
+                             <p>  }}</p>
+                                
+                            <p>console.log(compare(10,10))</p>
+                            <p>console.log(compare(10,15)) </p>
+                            <p> console.log(compare(10,'10'))</p>
+
+
+                        </div>
+                        
+                       <div id="function2">
+
+                       
+                            <p>function change(fahrenheit) {</p>
+                            <br>
+                            <p>  if (typeof fahrenheit === 'string') {</p>
+                            <p>    return "false";</p>
+                            <p>  }</p>
+                            <p>  return (fahrenheit - 32) * 5 / 9 + '°C';</p>
+                            <p>}</p>
+                            <br>
+                            <p>console.log(change(21));</p>
+                            <p>console.log(change('Nika Abashidze'));</p>
+                        
+
+                   
+
+                       </div> 
+
+
+
+                       <div id="function3">
+                        <p>function calculate(a, b, operation) {</p>
+                            <br>
+                            <p>  if (typeof a !== 'number') {</p>
+                            <p>    return 'false';</p>
+                            <p>  }</p>
+                            <p>  if (typeof b !== 'number') {</p>
+                            <p>    return 'false';</p>
+                            <p>  }</p>
+                            <br>
+                            <p>  if (operation === '+') {</p>
+                            <p>    return a + b;</p>
+                            <p>  } else if (operation === '-') {</p>
+                            <p>    return a - b;</p>
+                            <p>  } else if (operation === '*') {</p>
+                            <p>    return a * b;</p>
+                            <p>  } else if (operation === '/') {</p>
+                            <p>    return a / b;</p>
+                            <p>  }</p>
+                            <br>
+                            <p>else {</p>
+                            <p>  return 'false';</p>
+                            <p>}}</p>
+                            <br>
+                            <p>console.log(calculate(10 , 5 , '+' ));</p>
+                            <p>console.log(calculate(10 , 5 , '-' ));</p>
+                            <p>console.log(calculate(10 , 5 , '*' ));</p>
+                            <p>console.log(calculate(10, 5 , '/' ));</p>
+                            <p>console.log(calculate(5 , 'Nika' , '+' ));</p>
+                            <p>console.log(calculate(5 , 5 , '?' )); </p>
+
+                       </div> 
+            
+            </aside>
+            
+
+          
+
+            
+    <script src="app.js"></script>
+</body>
+</html>
