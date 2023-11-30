@@ -2,7 +2,6 @@
 
                                                              // HOMEEWORK 1
 
-
                                                              
 function compare(a, b) {
 
