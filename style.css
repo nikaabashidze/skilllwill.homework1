@@ -12,9 +12,15 @@ body {
 }
 
 
-.background {
-    background-color: rgb(45, 41, 41);
+
+.container {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    background-size: cover;
 }
+
+
 
 .cont {
      position: relative;
@@ -165,7 +171,39 @@ display: none;
 
 
 
+    @media only screen and (max-width: 1000px) {
 
+        .container {
+            
+            display: grid;
+            grid-template-rows: 180px auto auto ;
+            row-gap:  0px;
+
+        }
+    
+    
+        .cont {
+            width: 100%;
+            height: 800px;
+        }
+    
+    
+        .condition{
+            width: 300px;
+            height: 250px;
+            margin: 0;
+            
+        
+        }
+
+        .functions{
+            width: 300px;
+            height: 530px;
+            margin: 0;
+            }
+            
+
+      }
 
 
 
